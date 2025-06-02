@@ -23,47 +23,30 @@
    ```bash
    git clone https://github.com/ваш-репозиторий/finance-bot.git
    cd finance-bot
-Установить зависимости:
+2. Установить зависимости:
 
-bash
-pip install -r requirements.txt
-Создать файл config.py с вашим токеном:
+   pip install -r requirements.txt
 
-python
-TOKEN = "ваш_токен_бота"
-Запустить бота:
+3. Создать файл config.py с вашим токеном:
+   TOKEN = "ваш_токен_бота"
+4. Запустить бота:
+   python main.py
 
-bash
-python main.py
-📷 Скриншоты
-Главное меню
-Курс валют
+## 📌 Команды
+   /start - запуск бота
 
-📌 Команды
-/start - запуск бота
 
-Главное меню:
+## 📈 База данных
+   Структура таблицы users:
 
-Регистрация
-
-Курс валют
-
-Советы по экономии
-
-Личные финансы
-
-📈 База данных
-Структура таблицы users:
-
-sql
-CREATE TABLE users (
-   id INTEGER PRIMARY KEY,
-   telegram_id INTEGER UNIQUE,
-   name TEXT,
-   category1 TEXT,
-   category2 TEXT,
-   category3 TEXT,
-   expenses1 REAL,
-   expenses2 REAL,
-   expenses3 REAL
-)
+   CREATE TABLE users (
+      id INTEGER PRIMARY KEY,
+      telegram_id INTEGER UNIQUE,
+      name TEXT,
+      category1 TEXT,
+      category2 TEXT,
+      category3 TEXT,
+      expenses1 REAL,
+      expenses2 REAL,
+      expenses3 REAL
+   )
